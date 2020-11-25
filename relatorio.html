@@ -1,0 +1,128 @@
+    <!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatorios</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script type="text/javascript" src="relatorio.js"></script>
+    <link rel="stylesheet" href="css\biblioteca_estilos.css">
+</head>
+
+<body onload="carregardados()">
+
+    <table border="0" width="100%" class="menu">
+        <tr>
+            <td style="text-align: center"><a href="..\trabalhofinal\agendamentocliente.html"> <img <td
+                        align="center">Agendamento Atendimento Presencial</td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td style="text-align: center"><a href="logingerente.html">Portal do Colaborador</a></td>
+        </tr>
+
+    </table>
+
+    <table border="0" width="100%" class="menu">
+        <tr>
+            <td align="center"><a href="..\trabalhofinal\agendamentocliente.html"> <img
+                        src="..\trabalhofinal\imagens\barra.png" width="100%" height="100%"> </td>
+        </tr>
+
+    </table>
+
+
+    
+
+
+    <div class="container">
+        <br>
+        <div class="row">
+            <div class="col-12">
+                <h3 style="text-align: center;">RELATÓRIO DE AGENDAMENTOS</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div id="foto" class="col-12"></div> <br>
+                <div id="dados" class="col-12"></div>
+            </div>
+            <div class="col-sm">
+
+            </div>
+            <div class="col-sm">
+                <button type="button" class="btn btn-outline-danger" onclick="logout()">Logout</button>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div id="foto" class="col-12"></div> <br>
+        </div>
+        <div class="row">
+            <div id="dados" class="col-12"></div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="input-group flex-nowrap">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input id="chkagencia" type="checkbox" aria-label="Checkbox for following text input">
+                        </div>
+                        <span class="input-group-text" id="addon-wrapping">Agência</span>
+                    </div>
+                    <select id="cmdagencia" class="custom-select">
+                    </select>
+                </div>
+            </div>
+        </div> <br>
+        <div class="row">
+            <div class="col-12">
+                <div class="input-group flex-nowrap">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input id="chkcliente" type="checkbox" aria-label="Checkbox for following text input">
+                        </div>
+                        <span class="input-group-text" id="addon-wrapping">Cliente</span>
+                    </div>
+                    <select id="cmdcliente" class="custom-select">
+                    </select>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-12">
+                <div class="input-group flex-nowrap">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input id="chkdata" type="checkbox" aria-label="Checkbox for following text input">
+                        </div>
+                        <span class="input-group-text" id="addon-wrapping">Data</span>
+                    </div>
+                    <input id="txtdata" type="date" class="form-control" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+        <button onclick="filtrar()" type="button" class="btn btn-outline-dark btn-block btn-lg">Filtrar</button>
+        <br>
+        <div class="table-responsive-sm">
+            <h4 id="resultado"></h4>
+        </div>        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

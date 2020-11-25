@@ -1,0 +1,50 @@
+
+
+p{
+    font-size: 14px;
+    font-family: Verdana;
+    color: green;
+}
+h3{
+    font-size: 16px;
+    font-family: Verdana;
+    color: grey;
+    text-align: center;
+    
+}
+.menu{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: purple;
+}
+body{
+    background-color: rgb(241, 241, 237);
+}
+.listas{
+    font-size: 12px;
+    color: rgb(247, 247, 8);
+}
+
+#formuser{
+    color: yellow;
+    background-color: yellowgreen;
+}
+.container{
+    width: 500px;
+    background-color: rgb(241, 241, 237);
+    
+}
+.div1{
+    background-color: rgb(241, 241, 237);
+}
+.div2{
+    background-color:rgb(241, 241, 237);
+}
+.div3{
+    background-color: rgb(241, 241, 237);
+}
+.div4{
+    background-color: rgb(241, 241, 237);
+}
+
