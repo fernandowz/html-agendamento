@@ -17,8 +17,8 @@
             </div>
          </div>
          <br> 
-         <a href="login.html"> PAGINA DE LOGINS - GERENTE </a> <BR>
-         <a href="agendamento.html"> PAGINA DE LOGINS - CLIENTE </a> <BR>
+         <a href="https://html-trabalhofinal-toledo.herokuapp.com/logingerente.html"> PAGINA DE LOGINS - GERENTE </a> <BR>
+         <a href="https://html-trabalhofinal-toledo.herokuapp.com/agendamentocliente.html"> PAGINA DE LOGINS - CLIENTE </a> <BR>
       </div>
       <!-- Chamada da bilbliota em Javascript internet-->
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
